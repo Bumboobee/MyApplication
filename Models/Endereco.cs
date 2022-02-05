@@ -49,6 +49,6 @@ namespace MyApplication.Models
         [DisplayFormat(DataFormatString = "{0:N}", ApplyFormatInEditMode = true)]
         [Required(ErrorMessage = "O campo Nome do Cliente é de preenchimento obrigatório.")]
         public int PessoaId { get; set; }
-        public virtual ICollection<Pessoa> Pessoa { get; set; }
+        public virtual Pessoa Pessoa { get; set; }
     }
 }

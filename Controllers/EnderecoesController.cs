@@ -24,7 +24,8 @@ namespace MyApplication.Controllers
         // GET: Enderecoes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Endereco.ToListAsync());
+            var applicationDbContext = _context.Endereco.Include(e => e.Pessoa);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Enderecoes/Details/5
@@ -36,6 +37,7 @@ namespace MyApplication.Controllers
             }
 
             var endereco = await _context.Endereco
+                .Include(e => e.Pessoa)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco == null)
             {
@@ -65,6 +67,7 @@ namespace MyApplication.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "Id", "NomeCompleto", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -81,6 +84,7 @@ namespace MyApplication.Controllers
             {
                 return NotFound();
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "Id", "NomeCompleto", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -116,6 +120,7 @@ namespace MyApplication.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "Id", "NomeCompleto", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -128,6 +133,7 @@ namespace MyApplication.Controllers
             }
 
             var endereco = await _context.Endereco
+                .Include(e => e.Pessoa)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (endereco == null)
             {
