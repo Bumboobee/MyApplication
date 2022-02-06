@@ -1,31 +1,59 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
 <style>
     body {
-        background: #dcdcdc;
-
+        animation: animate 5.5s ease infinite;
     }
-    span{
+    @@keyframes animate {
+        0% {
+            background-color: #3a2cf5;
+        }
+        25% {
+            background-color: #12054e;
+        }
+        50% {
+            background-color: #390f70;
+        }
+        75% {
+            background-color: #ab4be2;
+        }
+        85% {
+            background-color: #236490;
+        }
+        100% {
+            background-color: #2d54d3;
+        }
+    }
+    span {
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 1.2rem;
         color: red;
     }
     p {
-        font-weight: 700;
-        font-size: 2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
     }
     a span:hover {
         color: #8c0707;
-        transition: .2s;
+        transition: .2s ease;
     }
-</style>
+    h1, h2, p {
+        font-family: 'Poppins', sans-serif;
+    }
 
-<div class="text-center">
+    
+ </style>
+
+<div class="text-left">
     <br />
-    <h1 class="display-4">Bem vindo!</h1>
     <br />
-    <h2 class="display-4">Pronto para fazer a diferença?</h2>
+    <h1 class="display-4" style="font-weight: 700; font-size: 4.5rem; color: #ffffff">BEM VINDO!</h1>
     <br />
-    <p>Laboratório Sodré, buscando sempre inovação e qualidade a <a href="https://laboratoriosodre.com.br/" target="_blank"><span>mais de 38 anos de Tradição</span></a></p>
+    <h2 class="display-4" style="color: #ffffff; line-height: 1em; text-transform: uppercase; font-size: 5rem; font-weight: 400; ">Nunca pare</h2>
+    <h2 class="display-4" style="color: #ffffff; line-height: 1em; text-transform: uppercase; font-size: 4rem; font-weight: 400; ">de fazer a diferença</h2>
+    <br />
+    <p style="color: #e1c6c6;">Laboratórios Sodré, buscando sempre inovação e qualidade a <a href="https://laboratoriosodre.com.br/" target="_blank"><span>mais de 38 anos de Tradição.</span></a></p>
+
 </div>
