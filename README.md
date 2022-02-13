@@ -15,7 +15,7 @@ Some programing languages that was used to turn the sketch into something increa
 
 Frameworks
 
-- Boostrap
+- **[Boostrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)**
 - Jquery
 
 API
@@ -26,6 +26,7 @@ In addition to
 
 - Html
 - Css
+- **Coffee...** like, a lot ☕
 
 ### Preview 🎬
 
