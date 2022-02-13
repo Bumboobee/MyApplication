@@ -1,10 +1,10 @@
 # MyApplication
-### Project Laboratório Sodré AspNet 🧪
+### Project [**Laboratório Sodré**](https://laboratoriosodre.com.br/) AspNet 🧪
 
 This is a web application developed especially for **personal/professional** purposes.
 
 It was made in **Visual Studio** using Asp .Net and [**scaffold**](https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/scaffold-identity?view=aspnetcore-6.0&tabs=visual-studio) code generetor. 
-In it we have a database with three entities that store the data and communicate with each other. 
+In it we have a database with three [**entities**](https://medium.com/swlh/entity-framework-building-an-asp-web-application-mvc-1af09a450e88) that store the data and communicate with each other.  
 
 You can check out the project by downloading it and running it in your Visual studio. **By default it will use the LocalHost port.**
 
@@ -20,7 +20,7 @@ Frameworks
 
 API
 
-- SweetAlert2
+- [**SweetAlert2**](https://sweetalert2.github.io/#download)
 
 In addition to
 
