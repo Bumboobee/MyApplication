@@ -32,7 +32,8 @@ In addition to
 
 https://user-images.githubusercontent.com/94147847/152703131-df62dea7-063f-479b-99e1-93401580da18.mp4
 
-<div align:center>
+<div align="center">
+  
 > Don't reinvent the wheel, just realign it.
->> Anthony J. D'Angelo 
+>> **Anthony J. D'Angelo** 
 <div />
